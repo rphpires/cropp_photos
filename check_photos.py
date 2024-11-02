@@ -28,6 +28,7 @@ WHERE LastUpdate > DATEADD(day, -1, GETUTCDATE())
 
     for chid, first_name, last_biometric_data_update, data, last_photo_update in ret:
         try:
+            photo_cropped = False
             trace(f'{chid= }, {first_name=  }, {last_biometric_data_update= }')
             photo_path = os.path.join(photos_default_path, f"{chid}_1.jpg")
             # print(photo_path)
@@ -36,7 +37,6 @@ WHERE LastUpdate > DATEADD(day, -1, GETUTCDATE())
             if qualidade < 30:
                 trace("Imagem com qualidade baixa.")
             else:
-                photo_cropped = False
                 update_main_photo = get_photo_updates_diff(last_biometric_data_update, last_photo_update)
                 if (
                     serv_parameters.cropp_photo
