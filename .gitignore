@@ -1,4 +1,4 @@
-_venv-gateway
+venv
 **/__pycache__/
 @test.py
 logs
