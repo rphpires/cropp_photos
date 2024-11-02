@@ -3,3 +3,4 @@ _venv-gateway
 @test.py
 logs
 photo_quality.py
+test.py
