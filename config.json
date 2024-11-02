@@ -1,0 +1,12 @@
+{
+    "server_name": "RPH-SRV",
+    "db_name": "W_Access",
+    "db_user": "sa",
+    "db_password": "#w_access_Adm#",
+    "wxs_api_url": "http://localhost/W-AccessAPI/v1/",
+    "wxs_api_user": "WAccessAPI",
+    "wxs_api_password": "#WAccessAPI#",
+    "cropp_photo": true,
+    "last_photo_update": "AuxDte05",
+    "quality": "AuxText15"
+}

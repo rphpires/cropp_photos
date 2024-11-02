@@ -1,0 +1,5 @@
+_venv-gateway
+**/__pycache__/
+@test.py
+logs
+photo_quality.py
